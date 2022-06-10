@@ -1,9 +1,14 @@
+body {
+    display: none;
+}
+
 @media (max-width: 450px){
     *{
         box-sizing:border-box;
     }
 
     body {
+        display: initial;
         background-color: #eeeeee;
         font-family: 'Righteous', cursive;
         font-family: 'Roboto', sans-serif;
