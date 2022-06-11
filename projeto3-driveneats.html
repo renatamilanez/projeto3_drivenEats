@@ -22,141 +22,132 @@
     </div>
 
     <div class="content">
-        <div class="cattegory">
-            <div class="food">
+        <div class="cattegory foods">
             <p class="title-cattegory">Primeiro, seu prato</p>
             <div class="choice">
-                <div class="option">
+                <div class="option" onclick="selectFood(this)">
                 <img src="./imagens/frango_yin_yang 1.png" class="img-option">
                 <p class="title-option">Frango Yin Yang</p>
                 <p class="description-option">Um pouco de batata, um pouco de salada</p>
                 <p class="price-option">R$14,90</p>
-                <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                </div>
+                <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+            </div>
 
-                <div class="option">
+                <div class="option" onclick="selectFood(this)">
                     <img src="./imagens/frango_yin_yang 1.png" class="img-option">
                     <p class="title-option">Frango Yin Yin</p>
                     <p class="description-option">Um pouco de salada, mas sem batata</p>
                     <p class="price-option">R$13,90</p>
-                    <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                </div>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>                </div>
 
-                <div class="option">
+                <div class="option" onclick="selectFood(this)">
                     <img src="./imagens/frango_yin_yang 1.png" class="img-option">
                     <p class="title-option">Frango Yang Yang</p>
                     <p class="description-option">Um monte de batata e sem salada</p>
                     <p class="price-option">R$16,90</p>
-                    <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                </div>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>                </div>
 
-                <div class="option">
+                <div class="option" onclick="selectFood(this)">
                     <img src="./imagens/frango_yin_yang 1.png" class="img-option">
                     <p class="title-option">Vegano Yin Yang</p>
                     <p class="description-option">O de sempre mas com frango vegano</p>
                     <p class="price-option">R$19,90</p>
-                    <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                </div>
-            </div>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>                </div>
             </div>                   
         </div>       
 
-        <div class="cattegory">
-            <div class="drinks">
-                <p class="title-cattegory">Agora, sua bebida</p>
-                <div class="choice">
-                    <div class="option">
-                    <img src="./imagens/coquinha_gelada 1.png" class="img-option">
-                    <p class="title-option">Coquinha Gelada</p>
-                    <p class="description-option">Lata 350ml</p>
-                    <p class="price-option">R$4,90</p>
-                    <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-
-                    <div class="option">
-                        <img src="./imagens/coquinha_gelada 1.png" class="img-option">
-                        <p class="title-option">Coquinha Zero</p>
-                        <p class="description-option">Lata 350ml</p>
-                        <p class="price-option">R$5,90</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-
-                    <div class="option">
-                        <img src="./imagens/coquinha_gelada 1.png" class="img-option">
-                        <p class="title-option">Coquinha gelada</p>
-                        <p class="description-option">Garrafa 600ml</p>
-                        <p class="price-option">R$7,90</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-
-
-                    <div class="option">
-                        <img src="./imagens/coquinha_gelada 1.png" class="img-option">
-                        <p class="title-option">Guaraná</p>
-                        <p class="description-option">Lata 350ml</p>
-                        <p class="price-option">R$4,50</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-
-                    <div class="option">
-                        <img src="./imagens/coquinha_gelada 1.png" class="img-option">
-                        <p class="title-option">Guaraná Zero</p>
-                        <p class="description-option">Lata 350ml</p>
-                        <p class="price-option">R$5,50</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-
-                    <div class="option">
-                        <img src="./imagens/coquinha_gelada 1.png" class="img-option">
-                        <p class="title-option">Guaraná</p>
-                        <p class="description-option">Garrafa 600ml</p>
-                        <p class="price-option">R$7,50</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
+        <div class="cattegory drinks">
+            <p class="title-cattegory">Agora, sua bebida</p>
+            <div class="choice">
+                <div class="option" onclick="selectDrink(this)">
+                <img src="./imagens/coquinha_gelada 1.png" class="img-option">
+                <p class="title-option">Coquinha Gelada</p>
+                <p class="description-option">Lata 350ml</p>
+                <p class="price-option">R$4,90</p>
+                <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
                 </div>
-            </div>                    
+
+                <div class="option" onclick="selectDrink(this)">
+                    <img src="./imagens/coquinha_gelada 1.png" class="img-option">
+                    <p class="title-option">Coquinha Zero</p>
+                    <p class="description-option">Lata 350ml</p>
+                    <p class="price-option">R$5,90</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+
+                <div class="option" onclick="selectDrink(this)">
+                    <img src="./imagens/coquinha_gelada 1.png" class="img-option">
+                    <p class="title-option">Coquinha gelada</p>
+                    <p class="description-option">Garrafa 600ml</p>
+                    <p class="price-option">R$7,90</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+
+
+                <div class="option" onclick="selectDrink(this)">
+                    <img src="./imagens/coquinha_gelada 1.png" class="img-option">
+                    <p class="title-option">Guaraná</p>
+                    <p class="description-option">Lata 350ml</p>
+                    <p class="price-option">R$4,50</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+
+                <div class="option" onclick="selectDrink(this)">
+                    <img src="./imagens/coquinha_gelada 1.png" class="img-option">
+                    <p class="title-option">Guaraná Zero</p>
+                    <p class="description-option">Lata 350ml</p>
+                    <p class="price-option">R$5,50</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+
+                <div class="option" onclick="selectDrink(this)">
+                    <img src="./imagens/coquinha_gelada 1.png" class="img-option">
+                    <p class="title-option">Guaraná</p>
+                    <p class="description-option">Garrafa 600ml</p>
+                    <p class="price-option">R$7,50</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+            </div>                 
         </div>
 
-        <div class="cattegory">
-            <div class="desserts">
-                <div>
-                <p class="title-cattegory">Por fim, sua sobremesa</p>
-                </div>
-                <div class="choice">
-                    <div class="option">
-                        <img src="./imagens/pudim 1.png" class="img-option">
-                        <p class="title-option">Pudim</p>
-                        <p class="description-option">Apenas pudim</p>
-                        <p class="price-option">R$7,90</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-        
-                    <div class="option">
-                        <img src="./imagens/pudim 1.png" class="img-option">
-                        <p class="title-option">Pudim</p>
-                        <p class="description-option">Pudim de baunilha</p>
-                        <p class="price-option">R$9,90</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-        
-                    <div class="option">
-                        <img src="./imagens/pudim 1.png" class="img-option">
-                        <p class="title-option">Pudim</p>
-                        <p class="description-option">Pudim de chocolate</p>
-                        <p class="price-option">R$8,50</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-        
-        
-                    <div class="option">
-                        <img src="./imagens/pudim 1.png" class="img-option">
-                        <p class="title-option">Pudim</p>
-                        <p class="description-option">Pudim de laranja</p>
-                        <p class="price-option">R$8,90</p>
-                        <ion-icon name="checkmark-circle-outline" class="check-button"></ion-icon>
-                    </div>
-                </div>                    
+        <div class="cattegory desserts">
+            <div>
+            <p class="title-cattegory">Por fim, sua sobremesa</p>
             </div>
+            <div class="choice">
+                <div class="option" onclick="selectDessert(this)">
+                    <img src="./imagens/pudim 1.png" class="img-option">
+                    <p class="title-option">Pudim</p>
+                    <p class="description-option">Apenas pudim</p>
+                    <p class="price-option">R$7,90</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+    
+                <div class="option" onclick="selectDessert(this)">
+                    <img src="./imagens/pudim 1.png" class="img-option">
+                    <p class="title-option">Pudim</p>
+                    <p class="description-option">Pudim de baunilha</p>
+                    <p class="price-option">R$9,90</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+    
+                <div class="option" onclick="selectDessert(this)">
+                    <img src="./imagens/pudim 1.png" class="img-option">
+                    <p class="title-option">Pudim</p>
+                    <p class="description-option">Pudim de chocolate</p>
+                    <p class="price-option">R$8,50</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+    
+    
+                <div class="option"  onclick="selectDessert(this)">
+                    <img src="./imagens/pudim 1.png" class="img-option">
+                    <p class="title-option">Pudim</p>
+                    <p class="description-option">Pudim de laranja</p>
+                    <p class="price-option">R$8,90</p>
+                    <ion-icon name="checkmark-circle" class="check-button hidden"></ion-icon>
+                </div>
+            </div>                    
         </div>
     </div>
 
@@ -164,8 +155,35 @@
         <div class="close-button">
             <p class="close-txt">Selecione os 3 itens <br>para fechar o pedido</p>
         </div>
-
     </div>
+
+    <div class="close-order hidden">
+        <div class="check-close">
+            <p class="check-txt">Fechar pedido</p>
+        </div>
+    </div>
+
+    <div class="confirmation-page hidden">
+        <div class="confirmation-box">
+            <p class="confirmation-txt"><strong>Confirme seu pedido</strong></p>
+            <span>
+                <p class="confirmation-txt">Comida</p><p>Preço</p>
+            </span>
+            <span>
+                <p class="confirmation-txt">Bebida</p>
+                <p class="confirmation-txt">Preço</p>
+            </span>
+            <span>
+                <p class="confirmation-txt">Sobremesa</p>
+                <p class="confirmation-txt">Preço</p>
+            </span>
+            <span>
+                <p class="confirmation-txt"><strong>TOTAL</strong></p>
+                <p class="confirmation-txt"><strong>Preço</strong></p>
+            </span>
+        </div>
+    </div>
+
 
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 
