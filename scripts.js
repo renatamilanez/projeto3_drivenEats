@@ -49,22 +49,24 @@ function sendOrder() {
     const text = getOrderText()
 
 
-    //window.open("https://api.whatsapp.com/send?phone=5527999175853&text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20o%20pedido%3A%20%0A%20%20%20%20%20%20%20%20-%20Prato%3A%20Frango%20Yin%20Yang%0A%20%20%20%20%20%20%20%20-%20Bebida%3A%20Coquinha%20Gelada%0A%20%20%20%20%20%20%20%20-%20Sobremesa%3A%20Pudim%0A%20%20%20%20%20%20%20%20Total%3A%20R%24%2025%0A%20%20%20%20")
+    window.open(`https://api.whatsapp.com/send?phone=5527999175853&text=${text}`)
 }
 
 function getOrderText(){
-    let CheckedFood = document.querySelector(".foods .select-option .title-option").innerHTML
-    let CheckedDrink = document.querySelector(".drinks .select-option .title-option").innerHTML
-    let CheckedDessert = document.querySelector(".desserts .select-option .title-option").innerHTML
-    let PriceFood = document.querySelector(".foods .select-option .price-option").innerHTML
-    let PriceDrink = document.querySelector(".drinks .select-option .price-option").innerHTML
-    let PriceDessert = document.querySelector(".desserts .select-option .price-option").innerHTML
+    let checkedFood = document.querySelector(".foods .select-option .title-option").innerHTML
+    let checkedDrink = document.querySelector(".drinks .select-option .title-option").innerHTML
+    let checkedDessert = document.querySelector(".desserts .select-option .title-option").innerHTML
+    let priceFood = document.querySelector(".foods .select-option .price-option").innerHTML
+    let priceDrink = document.querySelector(".drinks .select-option .price-option").innerHTML
+    let priceDessert = document.querySelector(".desserts .select-option .price-option").innerHTML
+    let priceFoodConverted = priceFood.replace('R$', '').replace(',', '.');
+    let priceDrinkConverted = priceDrink.replace('R$', '').replace(',', '.');
+    let priceDessertConverted = priceDessert.replace('R$', '').replace(',', '.');
+    let finalPrice = (Number(priceFoodConverted) + Number(priceDrinkConverted) + Number(priceDessertConverted)).toFixed(2);
 
-    console.log(CheckedFood)
-    console.log(CheckedDrink)
-    console.log(CheckedDessert)
-    console.log(PriceFood)
-    console.log(PriceDrink)
-    console.log(PriceDessert)
-    console.log(parseInt(PriceFood.replace('R$', '')))
+    return encodeURIComponent(`Olá, gostaria de fazer o pedido:
+    - Prato: ${checkedFood}
+    - Bebida: ${checkedDrink}
+    - Sobremesa: ${checkedDessert}
+    Total: R$ ${finalPrice}`)
 }
