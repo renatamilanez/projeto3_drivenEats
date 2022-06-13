@@ -173,15 +173,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
-    }
-
-    .check-txt {
-        font-style: normal;
+        color: #ffffff;
         font-size: 20px;
         font-weight: 700;
-        color: #ffffff;
-        text-align: center;
-        line-height: 23.44px;
     }
 
     .confirmation-page {
